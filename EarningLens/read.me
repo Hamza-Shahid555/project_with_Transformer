@@ -1,0 +1,25 @@
+What is an Earnings Call?
+Every 3 months, big companies like Apple or Tesla hold a phone call where the CEO talks about how the business is doing.
+Thousands of people listen. The CEO says things like:
+
+"We are cautiously optimistic about next quarter..."
+
+
+The Problem
+CEOs are trained to speak carefully. They never directly say "we're doing badly." Instead they use hidden language — soft words,
+vague phrases, lots of hedging. But these patterns actually carry real meaning that affects the stock price in the next 48 hours.
+
+What Your Transformer Does
+Your model reads the transcript of that call and learns to detect those hidden signals. For example:
+"We cannot provide specific guidance" → bearish signal, stock likely drops
+"We are raising our full-year outlook" → bullish signal, stock likely rises
+"Navigating a challenging macro environment" → CEO is nervous
+
+After reading thousands of past transcripts paired with what the stock actually did afterward, the transformer learns the pattern.
+
+The Output
+You paste any earnings call transcript and get back:
+
+Each sentence highlighted red (bad sign) or green (good sign)
+A final prediction: stock goes UP or DOWN in 48 hours
+A confidence percentage
